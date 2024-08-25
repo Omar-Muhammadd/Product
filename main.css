@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-top: 70px;
+    margin: auto;
+    width: 80%;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+}
+
+
+h1{
+    padding-bottom: 20px;
+    font-size: 28px;
+    color: rgb(43, 76, 138);
+    font-weight: bold;
+}
+
+
+.p-input{
+    height: 80px;
+    width: 100%;
+}
+
+.p-input input{
+    height: 60px;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(43, 76, 138);
+    outline: none;
+}
+
+input:focus{
+    border: 3px solid rgb(139, 180, 255);
+}
+
+.add-product{
+    padding: 15px ;
+    width: 150px;
+    background-color: rgb(112, 162, 255);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.add-product:active{
+    background-color: rgb(161, 192, 250);
+}
+
+.desplay-row{
+    flex-direction: row;
+}
+
+.delete-All{
+    background-color: rgb(201, 1, 1);
+}
+.delete-All:active{
+    background-color: rgb(184, 106, 106);
+}
+.tabel table{
+    border-radius: 6px;
+    border: 2px solid#ccc;
+    width: 100%;
+}
+
+thead th{
+    padding: 10px 0;
+    color: rgb(43, 76, 138);
+    border-left: 2px solid #ccc;
+    font-size: 20px;
+
+}
+
+.left{
+    border-left: none;
+}
+
+tbody td{
+    
+    color: rgb(36, 55, 92);
+    border-left: 2px solid #ccc;
+    font-size: 17px;
+}
+#TBody{
+    text-align: center;
+}
+#TBody td{
+    border-top: 2px solid #ccc;
+}
+
+.item{
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+}
+.delete-item{
+    background-color: rgb(201, 1, 1);
+}
+.delete-item:active{
+    background-color: rgb(175, 84, 84);
+}
+.update-item{
+    background-color: rgb(98, 201, 1);
+}
+.update-item:active{
+    background-color: rgb(157, 204, 113);
+}

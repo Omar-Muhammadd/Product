@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="container">
+            <div class="parent">
+                <h1>Add Product:</h1>
+                <div class="p-input">
+                    <input type="text" name="ProductName" id="ProductName" placeholder="Product Name">
+                </div>
+                <div class="p-input">
+                    <input type="text" name="ProductPrice" id="ProductPrice" placeholder="Product Price">
+                </div> 
+                <div class="p-input">
+                    <input type="text" name="ProductCategory" id="ProductCategory" placeholder="Product Category">
+                </div>
+                <div class="p-input">
+                    <input type="text" name="ProductDesc" id="ProductDesc" placeholder="Product Description">
+                </div>
+                <div class="desplay-row">
+                    <button type="submit" class="add-product " onclick=" AddProduct() "> Add Product </button>
+                    <button type="submit" class="add-product delete-All" onclick=" DeleteAll() "> Delete All </button>
+                </div>
+                
+            </div>
+        <div class="tabel">
+            <table>
+                <thead>
+                    <th class="left">ID</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Category</th>
+                    <th>Product Descriotion</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </thead>
+                <tbody id="TBody">
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
