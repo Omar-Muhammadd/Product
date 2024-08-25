@@ -72,9 +72,9 @@ function DeleteAll(){
 
 
 function Delete(i) {
-    productArr.splice(i, 1); // حذف العنصر من المصفوفة
-    localStorage.setItem("ourProducts", JSON.stringify(productArr)); // تحديث التخزين المحلي
-    AddHtml(); // إعادة تحديث الجدول
+    productArr.splice(i, 1); 
+    localStorage.setItem("ourProducts", JSON.stringify(productArr)); 
+    AddHtml(); 
 }
 
 
@@ -82,10 +82,10 @@ function Update(i) {
     productName.value = productArr[i].name;
     productPrice.value = productArr[i].price;
     productCategory.value = productArr[i].cate;
-    productDesc.value = productArr[i].decs;// نضع القيمة بـ 1 لتحديث عنصر واحد فقط
+    productDesc.value = productArr[i].decs;
 
-    // حذف المنتج القديم من المصفوفة للسماح بإضافة النسخة المعدلة
+  
     productArr.splice(i, 1);
-    localStorage.setItem("ourProducts", JSON.stringify(productArr)); // تحديث التخزين المحلي
-    AddHtml(); // إعادة تحديث الجدول
+    localStorage.setItem("ourProducts", JSON.stringify(productArr)); 
+    AddHtml(); 
 }
