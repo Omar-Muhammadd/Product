@@ -158,11 +158,6 @@ function Delete(i) {
     productArr.splice(i, 1);     
     localStorage.setItem("ourProducts", JSON.stringify(productArr)); 
     AddHtml();
-
-    productArr.splice(i, 1); 
-    localStorage.setItem("ourProducts", JSON.stringify(productArr)); 
-    AddHtml(); 
-
 }
 
 
