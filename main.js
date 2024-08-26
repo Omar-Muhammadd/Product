@@ -6,7 +6,6 @@ var productImg = document.getElementById("ProductImg")
 var productNum = document.getElementById("ProductNum")
 var productArr ;
 
-productNum = 1
 if(localStorage.getItem("ourProducts")== null){
     productArr = []
 }else{
