@@ -21,7 +21,6 @@ function AddProduct(){
         productPrice.value.trim() === "" || 
         productCategory.value.trim() === "" || 
         productDesc.value.trim() === "" || 
-        productNum.value.trim() === "" || 
         !productImg.files[0]  
     ) {
         alert("يرجى ملء جميع الحقول قبل إضافة المنتج.");
