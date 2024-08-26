@@ -10,7 +10,7 @@ if(localStorage.getItem("ourProducts")== null){
     productArr = []
 }else{
     productArr = JSON.parse(localStorage.getItem("ourProducts")) ;
-    AddProduct();
+    AddHtml()
 }
 
 
