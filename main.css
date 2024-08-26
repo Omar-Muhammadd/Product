@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:sans-serif;
 }
 
 .container{
@@ -76,21 +77,22 @@ input:focus{
     border: 2px solid#ccc;
     width: 100%;
 }
+.tabel{
+    margin: 0 10px;
+}
 
 thead th{
     padding: 10px 0;
     color: rgb(43, 76, 138);
     border-left: 2px solid #ccc;
     font-size: 20px;
-
 }
 
 .left{
     border-left: none;
 }
 
-tbody td{
-    
+tbody td{ 
     color: rgb(36, 55, 92);
     border-left: 2px solid #ccc;
     font-size: 17px;
@@ -121,4 +123,58 @@ tbody td{
 }
 .update-item:active{
     background-color: rgb(157, 204, 113);
+}
+
+.number{
+    width: 20%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .number{
+        width: 40%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .number{
+        width: 50%;
+    }
+    thead th{
+        font-size: 18px;
+    }
+    tbody td{ 
+        font-size: 17px;
+    }
+    .item{
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    thead th{
+        display: flex;
+        justify-content: center;
+    }
+    tbody td{ 
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+    }
+    .left{
+        padding-top: 30px;
+    }
+    .number{
+        width: 70%;
+    }
 }

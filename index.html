@@ -23,12 +23,17 @@
                 <div class="p-input">
                     <input type="text" name="ProductDesc" id="ProductDesc" placeholder="Product Description">
                 </div>
-                <div class="desplay-row">
+                <div class="p-input number">
+                    <input type="number" name="ProductCount" id="ProductNum" placeholder="Product Count">
+                </div>
+                <div class="desplay-row"> 
                     <button type="submit" class="add-product " onclick=" AddProduct() "> Add Product </button>
                     <button type="submit" class="add-product delete-All" onclick=" DeleteAll() "> Delete All </button>
                 </div>
                 
             </div>
+    </section>
+    <section>
         <div class="tabel">
             <table>
                 <thead>
@@ -45,9 +50,7 @@
                 </tbody>
             </table>
         </div>
-        
     </section>
-
 
     <script src="main.js"></script>
 </body>
