@@ -11,11 +11,14 @@
     <section class="container">
             <div class="parent">
                 <h1>Add Product:</h1>
+                <div class="number p-input">
+                    <input type="file" name="productImg" id="ProductImg">
+                </div>
                 <div class="p-input">
                     <input type="text" name="ProductName" id="ProductName" placeholder="Product Name">
                 </div>
                 <div class="p-input">
-                    <input type="text" name="ProductPrice" id="ProductPrice" placeholder="Product Price">
+                    <input type="number" name="ProductPrice" id="ProductPrice" placeholder="Product Price">
                 </div> 
                 <div class="p-input">
                     <input type="text" name="ProductCategory" id="ProductCategory" placeholder="Product Category">
@@ -23,31 +26,28 @@
                 <div class="p-input">
                     <input type="text" name="ProductDesc" id="ProductDesc" placeholder="Product Description">
                 </div>
-                <div class="desplay-row">
+                <div class="p-input number">
+                    <input type="number" name="ProductCount" id="ProductNum" placeholder="Product Count">
+                </div>
+                <div class="desplay-row"> 
                     <button type="submit" class="add-product " onclick=" AddProduct() "> Add Product </button>
                     <button type="submit" class="add-product delete-All" onclick=" DeleteAll() "> Delete All </button>
                 </div>
                 
             </div>
-        <div class="tabel">
-            <table>
-                <thead>
-                    <th class="left">ID</th>
-                    <th>Product Name</th>
-                    <th>Product Price</th>
-                    <th>Product Category</th>
-                    <th>Product Descriotion</th>
-                    <th>Delete</th>
-                    <th>Update</th>
-                </thead>
-                <tbody id="TBody">
-                    
-                </tbody>
-            </table>
+    </section>
+    <section>
+        <div class="container">
+            
+                <h1>All Product</h1>
+            
+            <div class="parent-card" id="parent-card">
+                
+            </div>
         </div>
         
+       
     </section>
-
 
     <script src="main.js"></script>
 </body>

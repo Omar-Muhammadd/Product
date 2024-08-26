@@ -2,8 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:sans-serif;
 }
 
+img{
+    width: 100%;
+}
 .container{
     padding-top: 70px;
     margin: auto;
@@ -24,7 +28,25 @@ h1{
     color: rgb(43, 76, 138);
     font-weight: bold;
 }
+.center{
+    color: aliceblue;
+    background-color: rgb(43, 76, 138);
+    border-radius: 16px;
+    padding: 10px ;
+    margin-bottom: 30px;
+}
+.all{
+    text-align: center;
+    width: 20%;
+    margin: auto;
+}
 
+
+.img-product .file-upload-button{
+    padding: 60px;
+    margin: 60px;
+    background-color: aqua;
+}
 
 .p-input{
     height: 80px;
@@ -76,21 +98,22 @@ input:focus{
     border: 2px solid#ccc;
     width: 100%;
 }
+.tabel{
+    margin: 0 10px;
+}
 
 thead th{
     padding: 10px 0;
     color: rgb(43, 76, 138);
     border-left: 2px solid #ccc;
     font-size: 20px;
-
 }
 
 .left{
     border-left: none;
 }
 
-tbody td{
-    
+tbody td{ 
     color: rgb(36, 55, 92);
     border-left: 2px solid #ccc;
     font-size: 17px;
@@ -102,23 +125,192 @@ tbody td{
     border-top: 2px solid #ccc;
 }
 
+
+
 .item{
+    border-radius: 10px;
     padding: 10px 0;
-    width: 100%;
+    width: 30%;
     color: white;
     font-size: 17px;
     cursor: pointer;
     border: none;
 }
 .delete-item{
-    background-color: rgb(201, 1, 1);
+    background-color: rgb(160, 14, 14);
 }
 .delete-item:active{
     background-color: rgb(175, 84, 84);
 }
 .update-item{
-    background-color: rgb(98, 201, 1);
+    background-color: rgb(81, 141, 252);
 }
 .update-item:active{
-    background-color: rgb(157, 204, 113);
+    background-color: rgba(112, 162, 255, 0.692);
+}
+
+.number{
+    width: 20%;
+}
+
+.parent-card{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.parent-card .card{
+    width: 23%;  
+    margin: 30px 0;  
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px 0 #ccc;
+}
+
+.card .product{
+    height: 300px;
+}
+.product img{
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit:cover;
+
+}
+
+.card .product-details {
+    padding: 15px;
+    color: rgb(43, 76, 138);
+    position: relative;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+}
+
+.product-details .price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(12, 27, 46);
+}
+
+.product-details p{
+    padding-top: 10px ;
+}
+
+.product-details .desc{
+    text-align: center;
+    padding: 20px 0 60px 0;
+}
+.product{
+    position: relative;
+}
+.product .id{
+    position: absolute;
+    padding: 10px;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .number{
+        width: 40%;
+    }
+    .parent-card .card{
+        width: 30%;    
+    }
+    .center{
+        font-size: 20px;
+    }
+
+    .product-details h3{
+        font-size: 18px;
+    }
+    .product-details p{
+        font-size: 16px;
+    }
+    .product-details .price{
+        font-size: 20px;
+    }
+    .product-details .item{
+        font-size: 13px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .number{
+        width: 50%;
+    }
+    thead th{
+        font-size: 18px;
+    }
+    tbody td{ 
+        font-size: 17px;
+    }
+    .item{
+        font-size: 15px;
+    }
+    .parent-card .card{
+        width: 48%;    
+    }
+    .center{
+        font-size: 16px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    thead th{
+        display: flex;
+        justify-content: center;
+    }
+    tbody td{ 
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+    }
+    .left{
+        padding-top: 30px;
+    }
+    .number{
+        width: 70%;
+    }
+    .all{
+        width: 40%;
+    }
+    .center{
+        
+        font-size: 16   px;
+    }
+    .parent-card .card{
+        width: 90%;    
+    }
+    .container{
+        width: 95%;
+    }
 }
